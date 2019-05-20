@@ -1,0 +1,34 @@
+<%- include('../partials/head.ejs') %>
+
+	<nav>
+		<ul>
+			<form action="/signout" method="post">
+				<button type=submit>Uitloggen</button>
+			</form>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<h3>Matches</h3>
+			
+				<ul>
+				<% for(var i = 0;i < user.length;i++) { %>
+			  <li class=matches><a href="/profiel/<%=i%>"><h5><%=user[i].username%></h5>
+				<img src="<%= user[i].profielfoto %>" alt=""></a></li>
+				<br>
+			  <% } %>
+
+			</ul>
+			<p>
+
+		<section>
+			<h3>Berichten</h3>
+		<h5>Bericht van: Liza</h5>
+		<p>Hey, ik zag dat we dezelfde interesses hadden zullen we elkaar wat beter leren.. <a href='/berichtdetail'>Lees verder..</a></p>
+		</section>
+		<section>
+			<h3>Profiel</h3>
+			<a href='/mijnprofiel'>Mijn profiel</a>
+		</section>
+	</main>
+			<%- include('../partials/foot.ejs') %>

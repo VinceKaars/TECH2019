@@ -1,0 +1,46 @@
+<%- include('../partials/head.ejs') %>
+
+	<nav>
+		<ul>
+			<form action="/signout" method="post">
+				<button type=submit>Uitloggen</button>
+			</form>
+		</ul>
+	</nav>
+	<main>
+		<h2>Match profiel:</h2>
+		<section>
+			<div id="profile">
+				<h1> <%= match.username %> -  <%= match.age %> </h1>
+				<img src=<%=match.profielfoto %> alt='foto'>
+				<br>
+				<br>
+				<blockqoute>
+					<%= match.bio %>
+				</blockqoute>
+
+			</div>
+			</ul>
+		</section>
+		<section>
+
+			<section>
+
+
+
+
+				<section>
+					<h5>Report</h5>
+					<form method=post>
+						<label for="report">Report:</label>
+						<input type="text" name="reporteduser" id="reporteduser" value="<%= match.username %>" readonly />
+						</br>
+
+						<textarea name="toelichting">Typ hier de reden van report.</textarea>
+						<button type=submit>Verstuur</button>
+
+					</form>
+				</section>
+	</main>
+
+	<%- include('../partials/foot.ejs') %>

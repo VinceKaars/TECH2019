@@ -1,0 +1,18 @@
+
+<%- include('../partials/head.ejs') %>
+
+<nav>
+	<ul><li><a href='/dashboard'>Dashboard</a></li>
+		<form action="/signout" method="post">
+			<input type=submit value="uitloggen">
+			</form>
+</nav>
+	<main>
+	<section>
+		<h1>Report verstuurd</h1>
+		<p>Je report is succesvol verstuurd.</p>
+		<p>Klik <a href='/'>hier</a> om naar je dashboard te gaan.</p>
+	</section>
+</main>
+
+<%- include('../partials/foot.ejs') %>

@@ -1,0 +1,25 @@
+<%- include('partials/head.ejs') %>
+<main>
+<nav>
+	<ul>
+		<li><a href='/'>Home</a></li>
+	</ul>
+</nav>
+<section class=formtop>
+	<form method="post">
+    <label for="username">Gebruikersnaam</label>
+    <input type="text" placeholder="Gebruikersnaam" name="username" value=""> 
+
+    <label for="password">Wachtwoord:</label>
+    <input type="password" placeholder="Wachtwoord" name="password" value="">
+
+	<button type="submit">Login</button>
+</form>
+</section>
+<section>
+	<h3>Registreer</h3>
+	<p>Klik <a href='/'>Hier</a> om je te registreren.</p>
+</section>
+</main>
+
+<%- include('partials/foot.ejs') %>

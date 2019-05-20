@@ -1,0 +1,36 @@
+<%- include('../partials/head.ejs') %>
+<nav>
+		<ul><li><a href='/admindashboard'>Dashboard</a></li>
+			<li><a href='/signout'>Uitloggen</a></li>
+		</ul>
+</nav>
+	<main>
+	<h2>Match profiel:</h2>
+	<section>
+		<p><img src='http://www.howtogetthewomanofyourdreams.com/wp-content/uploads/2013/03/womanslide21.png' alt='girl' style = width:100px; style=display:inline;> </p> <h3>Truus (23)</h3>
+		<ul>
+			<li>Leeftijd: 23 Jaar.</li>
+			<li>Woonplaats: Amsterdam.</li>
+			<li>Hobby's: Sporten, Uitgaan, Reizen</li>
+			<li>Over Truus: <blockquote>"Ik ben een jonge spontane meid die altijd in is voor een nieuwe uitdaging.</blockquote></li>
+		</ul>
+		</section>	
+<section>
+<h3>Foto's</h3>
+<img src='http://www.howtogetthewomanofyourdreams.com/wp-content/uploads/2013/03/womanslide21.png' alt='girl' style = width:100px; style=display:inline;>
+<img src='http://www.howtogetthewomanofyourdreams.com/wp-content/uploads/2013/03/womanslide21.png' alt='girl' style = width:100px; style=display:inline;>
+<img src='http://www.howtogetthewomanofyourdreams.com/wp-content/uploads/2013/03/womanslide21.png' alt='girl' style = width:100px; style=display:inline;>
+	</section>
+	
+<section>
+<h5>Admin:</h5>
+	<a href='/report'>Verwijder deze gebruiker.</a>
+	<h6>Waarschuwen:</h6>
+		<form action='/verstuurd'>
+Je bericht:<br>
+<input type="text" size="50"><br><br>
+<input type="submit" value="Versuur">
+</form>
+</section>
+</main>
+<%- include('../partials/foot.ejs') %>

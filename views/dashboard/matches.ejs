@@ -1,0 +1,27 @@
+
+<%- include('../partials/head.ejs') %>
+
+<nav>
+	<ul>
+	<li><a href='/dashboard'>Dashboard</a></li>
+		<form action="/signout" method="post">
+			<input type=submit value="uitloggen">
+			</form>
+	</ul>
+</nav>
+	<main>
+	<h2>Matches</h2>
+	<section>
+		<p><img src='http://www.howtogetthewomanofyourdreams.com/wp-content/uploads/2013/03/womanslide21.png' alt='girl' style = width:100px; style=display:inline;> </p> <h3><%= matchnaam %> (<%= matchleeftijd %>)</h3><a href='/matchdetail'>Bekijk profiel</a>
+	
+	</section>
+<section>
+		<p><img src='http://www.howtogetthewomanofyourdreams.com/wp-content/uploads/2013/03/womanslide21.png' alt='girl' style = width:100px; style=display:inline;> </p> <h3><%= matchnaam %> (<%= matchleeftijd %>)</h3><a href='/matchdetail'>Bekijk profiel.</a>
+	
+	</section><section>
+		<p><img src='http://www.howtogetthewomanofyourdreams.com/wp-content/uploads/2013/03/womanslide21.png' alt='girl' style = width:100px; style=display:inline;> </p> <h3><%= matchnaam %> (<%= matchleeftijd %>)</h3><a href='/matchdetail'>Bekijk profiel</a>
+	
+	</section>
+</main>
+
+	<%- include('../partials/foot.ejs') %>

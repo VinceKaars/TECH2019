@@ -1,0 +1,35 @@
+<%- include('../partials/head.ejs') %>
+
+
+	<nav>
+		<ul>
+			<form action="/signout" method="post">
+				<button type=submit>Uitloggen</button>
+			</form>
+		</ul>
+	</nav>
+<main>
+<section>
+
+<h3>Reports</h3>
+	<div class="admin">
+		<ul>
+			<% for(var i = 0;i < user.length;i++) { %>
+				<li><span class="naam"><%=user[i].username%></span> <br>
+						<img src="<%= user[i].profielfoto %>" alt="">
+				</li> 
+				<h4>Toelichting van Reports:</h4>
+				<blockqoute> <%= user[i].toelichting %> </blockqoute>
+				</li> <br>
+				<a href="/deletereported?id=<%= user[i].ID %>">Verwijder <%= user[i].username %></a>
+
+
+				<% } %>
+
+		</ul>
+	</div>
+
+</section>
+</main>
+
+<%- include('../partials/foot.ejs') %>

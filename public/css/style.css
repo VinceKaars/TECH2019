@@ -1,0 +1,200 @@
+body {
+background-color: #F7F7F7;
+color: #2D3142;
+font-family: 'Poppins', sans-serif;
+margin: 0;
+}
+
+h1 {
+	margin: 0;
+}
+
+h1,h2,h3,h4,h5,{
+	color: #4F5D75;
+}
+
+header {
+	background-color: #4F5D75;
+	color: white;
+	padding-left: 1em;
+}
+
+
+a {
+	color: #f3a2cc;
+}
+
+nav a{
+	float: right;
+	margin-right: 1em;
+	margin-bottom: 0.5em;
+	color: #f3a2cc;
+}
+
+a:hover{
+	color: #EF53A4;
+	text-decoration: underline;
+}
+
+nav {
+	background-color: #FFFFFF;
+}
+
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+	text-align: right:
+	
+}
+
+fieldset{
+	border: none;
+}
+
+
+footer {
+	background-color: #2D3142;
+	color: #EF53A4;
+	padding-left: 0.5em;
+}
+
+footer p{
+	color: white;
+}
+
+section {
+width: 100%;
+padding-left: 0.5em;
+margin: 0;
+}
+
+.formtop {
+	background-image: url('/images/hero.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 10em;
+	color: white;
+	min-height: 14em;
+	border-bottom: 2px solid #f3a2cc;
+}
+
+.formtop form{
+	padding-top: 1em;
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20em;
+}
+
+.formtop legend{
+	display: none;
+}
+
+input,select {
+	background-color: white;
+	border-radius: 20px;
+	color: #f3a2cc;
+	padding: 3px;
+	padding-left: 6px;
+	border: none;
+	margin-bottom: 1em;
+	display: inline;
+}
+
+button {
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 10px;
+ font-weight: bolder;
+  background: #f3a2cc;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  margin-left: 1.3em;
+}
+
+button:hover {
+  background: #EF53A4;
+  text-decoration: none;
+}
+
+section:nth-of-type(3){
+	background-color: white;
+	color: #f3a2cc;
+}
+
+section:nth-of-type(3) h3{
+	color: #2D3142;
+}
+
+main {
+	background-color: white;
+	min-height: 90%;
+}
+
+blockqoute {
+	display: inline;
+}
+
+label:nth-of-type(2){
+	margin-top: 2em;
+}
+
+nav button{
+	float: right;
+	margin: 0;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.registreer {
+	background-image: url('/images/registerbackground.png');
+	color: white;
+}
+
+.registreer button{
+	margin-bottom: 3em;
+}
+
+.registreer h1{
+	font-size: 1.5em;
+}
+
+main img {
+	max-height: 200;
+	width: auto;
+}
+
+.matches {
+	max-width: 500px;
+	background-color: antiquewhite;
+	padding: 1em;
+}
+
+
+/* Het tonen en verschijnen van content (Tona Pulido, 2O17 http://tonapulido.nl/ )*/
+#registerOne, #registerTwo, #Register-container {
+	display: none;
+}
+
+.show {
+	display: block!important;
+}
+
+.hide {
+display: none;
+}
+
+.edit{
+	background-image: url('/images/registerbackground.png');
+	color: white;
+	background-size: cover;
+}

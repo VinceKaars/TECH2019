@@ -1,0 +1,29 @@
+
+<%- include('../partials/head.ejs') %>
+
+
+<nav>
+	<ul><li><a href='/dashboard'>Dashboard</a></li>
+		<form action="/signout" method="post">
+			<input type=submit value="uitloggen">
+			</form>
+	</ul>
+</nav>
+	<main>
+	<h2>Mijn Profiel</h2>
+	<section>
+	<h3>Naam: <%= username %> (<%= age %>)</h3>
+	<img src='<%= profielfoto %>' alt=profielfoto/>
+	<blockquote><%= bio %></blockquote>
+	
+	</section>
+	<section>
+<h5>Profiel bewerken</h5>
+	<a href='/edit'>Profiel aanpassen.</a>
+	<a href='/delete'>Profiel verwijderen.</a>
+</section>
+</main>
+
+
+
+<%- include('../partials/foot.ejs') %>

@@ -1,0 +1,97 @@
+<%- include('partials/head.ejs') %>
+
+<nav>
+	<ul>
+		<li><a href='/aanmelden'>Aanmelden</a></li>
+	</ul>
+</nav>
+	<main>
+<!--
+	<section class=formtop>
+		<form method="get" action="/registreer">
+			<fieldset>
+				<legend>Ik ben:</legend>
+				<label>Ik ben </label><select>
+                <option value="" disabled>Selecteer uit de lijst</option>
+                <option>Een vrouw op zoek naar een man</option>
+                <option>Een man op zoek naar een vrouw</option>
+                <option>Een vrouw op zoek naar een vrouw</option>
+                <option>Een Man op zoek naar een man</option>
+            </select>	
+				<label>Date of birth:</label>		<input type="date">
+			</fieldset>
+			  <button type="submit">Naar registratie</button>
+		</form>
+		</section>
+-->
+		
+		<section class=formtop>
+<form enctype="multipart/form-data" method="post">
+      <div id='first'>
+       <label for="geslacht">Ik ben:</label>
+        <ul>
+            <li>
+                <input type="radio" name="gender" id="naam" value="m" />Man
+            </li>
+            <li>
+                <input type="radio" name="gender" id="naam" value="v" />Vrouw</li>
+        </ul>
+       
+        <label for="voorkeur">Mijn persoonlijke voorkeur gaat uit naar:</label>
+        <ul>
+            <li>
+                <input type="radio" name="sexuality" id="naam" value="m" />Mannen</li>
+            <li>
+                <input type="radio" name="sexuality" id="naam" value="v" />Vrouwen</li>
+            <li>
+                <input type="radio" name="sexuality" id="naam" value="b" />Beide</li>
+        </ul>
+        
+        <a href='#' id='nextOne'>Volgende</a>
+        
+	</div>
+     <div id='register-container'>
+      <div id='registerOne'>
+       
+        <label for="naam">Gebruikersnaam:</label>
+        <input type="text" name="username" id="username" value="" />
+        </br>
+         <label for="password">wachtwoord:</label>
+        <input type="password" name="password" id="password" value=""/>
+        </br>
+        <label for="geboortedatum">Geboortedatum:</label>
+        <input type="date" name="birthday" id="birthday" value="" />
+        </br>
+        <label for="email">E-mail adress:</label>
+        <input type="email" name="email" id="email" value="" />
+        </br>
+        
+        <a href='#' id='nextTwo'>Volgende</a>
+        
+		</div>
+
+    <div id='registerTwo'>
+				<legend>Profielfoto</legend>
+					<label>Je foto:</label>   <input type="file" name="profielfoto" id="profielfoto" value="" /><br>
+				<label for="biografie">Biografie:</label>
+				<textarea name="bio">Typ hier iets over jezelf.</textarea>
+			
+			
+
+<button type="submit" id="submit"/>Registreer</button>
+    </form>
+</div>
+</div>
+</section>
+		
+<section>
+	<h3>Info</h3>
+	<p>Dit is de datingsite voor mensen die op zoek zijn naar een serieuze relatie! Door onze persoonlijke vragenlijst te beantwoorden wordt je gemachted met de potentiele liefde van je leven.</p>
+</section>
+<section>
+	<h3>Ervaringen</h3>
+	<blockquote>"Via deze site heb ik mijn vrouw gevonden we zijn nu gelukkig getrouwd en verwachten een kind! Ik ben jullie eeuwig dankbaar!"</blockquote>
+</section>
+</main>
+
+<%- include('partials/foot.ejs') %>
