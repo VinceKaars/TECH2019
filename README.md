@@ -3,6 +3,6 @@
 
 Download all the files and upload them to your virtual machine.
 
-'npm install'
+`npm install`
 
-'node app.js' 
+`node app.js`
