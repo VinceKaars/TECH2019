@@ -1,3 +1,0 @@
-# PROJECT TECH 2019
-
-## TEST KOP
