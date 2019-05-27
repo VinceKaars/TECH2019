@@ -1,8 +1,7 @@
 # PROJECT TECH 2019
-## Install
+
+## Instructions
 
 Download all the files and upload them to your virtual machine.
 
-`npm install`
-
-`node app.js`
+Use `node app.js` to launch the application.
